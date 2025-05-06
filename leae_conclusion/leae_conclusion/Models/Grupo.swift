@@ -17,6 +17,7 @@ class Grupo: Codable {
         livro: Livro,
         usuarios: [Usuario] = [],
         imagem: String,
+        lider: Usuario,
         missoes: [Missao] = []
     ) {
         self._nome = nome
@@ -24,7 +25,7 @@ class Grupo: Codable {
         self._livro = livro
         self._usuarios = usuarios
         self._imagem = imagem
-        self._lider = nil
+        self._lider = lider
         self._missoes = missoes
     }
 
