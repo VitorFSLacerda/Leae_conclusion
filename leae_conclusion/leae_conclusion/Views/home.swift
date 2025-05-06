@@ -1,5 +1,6 @@
 import SwiftUI
 //import Charts
+// comentado : ViewGrupo e arquivo do BD
 
 struct Gadget: Identifiable {
     let id = UUID()
