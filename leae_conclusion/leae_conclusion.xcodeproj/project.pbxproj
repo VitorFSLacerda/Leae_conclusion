@@ -79,12 +79,12 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		66F954072DC903D70075A39F /* Sourcer */ = {
+		66F954072DC903D70075A39F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				66F954092DC903FA0075A39F /* ComponentsStruct.swift */,
 			);
-			path = Sourcer;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		66F9540B2DC904070075A39F /* Services */ = {
@@ -157,7 +157,7 @@
 				E598D8842DCA3A39004DC719 /* BancoDados */,
 				66F954102DC904A80075A39F /* Models */,
 				66F9540B2DC904070075A39F /* Services */,
-				66F954072DC903D70075A39F /* Sourcer */,
+				66F954072DC903D70075A39F /* Sources */,
 				66F953FA2DC902CF0075A39F /* Screens */,
 				E5BE88262DC8F8DA0028C6DE /* leae_conclusionApp.swift */,
 				E5BE88282DC8F8DA0028C6DE /* ContentView.swift */,
