@@ -16,10 +16,11 @@ struct leae_conclusionApp: App {
             if isLoggedIn {
                 MainAppView()
                     .id("mainAppView") // Força a reconstrução da view
-            } else {
-                LoginView()
-                    .id("loginView") // Força a reconstrução da view
+            }
+//            else {
+//                LoginView()
+//                    .id("loginView") // Força a reconstrução da view
             }
         }
     }
-}
+//}

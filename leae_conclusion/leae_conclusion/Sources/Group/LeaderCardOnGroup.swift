@@ -1,29 +1,29 @@
+////
+////  LeaderCardOnGroup.swift
+////  leae
+////
+////  Created by Aluno 12 on 05/05/25.
+////
 //
-//  LeaderCardOnGroup.swift
-//  leae
+//import SwiftUI
 //
-//  Created by Aluno 12 on 05/05/25.
+//struct LeaderCardOnGroup: View {
+//	let group: Grupo
+//    var body: some View {
+//		HStack(alignment: .center, spacing: Spacing.betweenItems) {
+//			Image(systemName: "medal")
+//			Text(group.mensagemLider)
+//				.font(.body)
+//		}
+//		.foregroundColor(.accentHighlight)
+//		.background(Color.secundaryBackground)
+//		.cornerRadius(CornerRadius.medium)
+//    }
+//}
 //
-
-import SwiftUI
-
-struct LeaderCardOnGroup: View {
-	let group: Grupo
-    var body: some View {
-		HStack(alignment: .center, spacing: Spacing.betweenItems) {
-			Image(systemName: "medal")
-			Text(group.mensagemLider)
-				.font(.body)
-		}
-		.foregroundColor(.accentHighlight)
-		.background(Color.secundaryBackground)
-		.cornerRadius(CornerRadius.medium)
-    }
-}
-
-struct LeaderCardOnGroup_Previews: PreviewProvider {
-    static var previews: some View {
-		let group = MockGroupGenerator.mockGroup()
-        LeaderCardOnGroup(group: group)
-    }
-}
+//struct LeaderCardOnGroup_Previews: PreviewProvider {
+//    static var previews: some View {
+//		let group = MockGroupGenerator.mockGroup()
+//        LeaderCardOnGroup(group: group)
+//    }
+//}

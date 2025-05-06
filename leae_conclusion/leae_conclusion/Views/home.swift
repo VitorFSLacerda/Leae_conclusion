@@ -60,46 +60,39 @@ struct GadgetCarousel: View {
 // estrutura para tabbar
 
 struct TabBar: View {
-    @State var selectedTab = 0
-    let isViewActive = false
-    var body: some View{
-        
-        TabView{
-            HomeView()
-                .tabItem{
-                    Image(systemName: "house")
-                        .font(.system(size:25))
-                    Text("Home")
-                }
-                .tag(0)
-            
-            Color.red
-                .tabItem{
-                    Image(systemName: "globe")
-                        .font(.system(size:25))
-                    Text("Explorar")
-                }
-                .tag(1)
-            
-            Color.clear
-                .tabItem{
-                    Image(systemName: "book")
-                        .font(.system(size:25))
-                    Text("Bilioteca")
-                }
-                .tag(2)
-            
-            Color.clear
-                .tabItem{
-                    Image(systemName: "person.circle")
-                        .font(.system(size:25))
-                    Text("Perfil")
-                }
-                .tag(3)
+  var body: some View{
+    TabView{
+      HomeView()
+        .tabItem{
+          Image(systemName: “house”)
+            .font(.system(size:25))
+          Text(“Home”)
         }
-        .foregroundColor(.black)
+//      NavigationView{ LivroView() }
+      Color.purple
+        .tabItem{
+          Image(systemName: “globe”)
+            .font(.system(size:25))
+          Text(“Explorar”)
+        }
+      LibraryView()
+        .tabItem{
+          Image(systemName: “book”)
+            .font(.system(size:25))
+          Text(“Bilioteca”)
+        }
+      Color.clear
+        .tabItem{
+          Image(systemName: “person.circle”)
+            .font(.system(size:25))
+          Text(“Perfil”)
+        }
     }
+    .accentColor(Color(“Highlight”))
+    .foregroundColor(.black)
+  }
 }
+
 
 
 struct HomeView: View {
