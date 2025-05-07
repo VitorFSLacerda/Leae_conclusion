@@ -8,14 +8,34 @@ class Livro: Codable, Identifiable, Hashable {
 	private var _genero: String
 	private var _sinopse: String
 	private var _imagemCapa: String?
+    private var _qtdPaginas: Int
+    private var _status: String
+    private var _rating: Int?
+    private var _porcentagemLido: Int
 
-	init(titulo: String, autor: String, genero: String, sinopse: String, imagemCapa: String?) {
-		self._titulo = titulo
-		self._autor = autor
-		self._genero = genero
-		self._sinopse = sinopse
-		self._imagemCapa = imagemCapa ?? "imagempadrao"
+	init() {
+		_titulo = ""
+		_autor = ""
+		_genero = ""
+		_sinopse = ""
+		_imagemCapa = nil
+		_qtdPaginas = 0
+		_status = ""
+		_rating = nil
+		_porcentagemLido = 0
 	}
+	
+    init(titulo: String, autor: String, genero: String, sinopse: String, imagemCapa: String?, qtdPaginas: Int, status: String, rating: Int?, porcentagemLido: Int) {
+        self._titulo = titulo
+        self._autor = autor
+        self._genero = genero
+        self._sinopse = sinopse
+        self._imagemCapa = imagemCapa ?? "imagempadrao"
+        self._qtdPaginas = qtdPaginas
+        self._status = status
+        self._rating = rating
+        self._porcentagemLido = porcentagemLido
+    }
 
     func hash(into hasher: inout Hasher) {
 		hasher.combine(id)

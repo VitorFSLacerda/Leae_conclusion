@@ -2,19 +2,33 @@ import Foundation
 
 class Comentario: Codable, Identifiable {
     
-    private let _id = UUID()
+    private var _id = UUID()
     private var _livro: Livro
     private var _usuario: Usuario
     private let _data: Date // data de postagem
     private let _progresso: Int // progresso na leitura em %
     private var _texto: String
+    private var _curtidas: Int
+    private var _comentarios: [Comentario]
+	
+	init() {
+		_livro = Livro()
+		_usuario = Usuario()
+		_data = Date()
+		_progresso = 0
+		_texto = ""
+		_curtidas = 0
+		_comentarios = []
+	}
     
-    init(livro: Livro, usuario: Usuario, texto: String) {
+    init(livro: Livro, usuario: Usuario, texto: String, curtidas: Int = 0, comentarios: [Comentario] = []) {
         self._livro = livro
         self._usuario = usuario
         self._data = Date()
         self._progresso = usuario.progressoEmLivro(livro) ?? 0
         self._texto = texto
+        self._curtidas = curtidas
+        self._comentarios = comentarios
     }
     
     // MARK: - Identifiable
@@ -27,6 +41,34 @@ class Comentario: Codable, Identifiable {
         set { _livro = newValue }
     }
     
+    var curtidas: Int {
+
+        get { return _curtidas }
+        set { _curtidas = newValue }
+    }
+
+    var comentarios: [Comentario] {
+
+        get { return _comentarios }
+        set { _comentarios = newValue }
+    }
+    
+    
+    // MARK: - Métodos
+    func adicionarComentario(_ comentario: Comentario) {
+        _comentarios.append(comentario)
+    }
+
+    func curtir() {
+        _curtidas += 1
+    }
+
+    func descurtir() {
+        if _curtidas > 0 {
+            _curtidas -= 1
+        }
+    }
+    
     var usuario: Usuario {
         get { return _usuario }
         set { _usuario = newValue }
@@ -36,6 +78,10 @@ class Comentario: Codable, Identifiable {
         get { return _texto }
         set { _texto = newValue }
     }
+	
+	var progresso: Int {
+		get { return _progresso }
+	}
     
     // Método para formatar a data como string
     func dataFormatada() -> String {

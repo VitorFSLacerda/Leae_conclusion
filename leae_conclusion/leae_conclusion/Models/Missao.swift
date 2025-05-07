@@ -1,51 +1,105 @@
+import Foundation
+
 class Missao: Codable {
     
-    private var _descricao: String
-    private var _pontuacao: String
-    private var _tipo: String
-    private var _progresso: Int
-    private var _meta: Int
-    
-    init(descricao: String, pontuacao: String, tipo: String, meta: Int, progresso: Int = 0) {
-        self._descricao = descricao
-        self._pontuacao = pontuacao
-        self._tipo = tipo
-        self._meta = meta
-        self._progresso = progresso
+    var dom: Bool
+    var seg: Bool
+    var ter: Bool
+    var qua: Bool
+    var qui: Bool
+    var sex: Bool
+    var sab: Bool
+
+    // Dias consecutivos
+    private var _diasConsecutivosAtual: Int
+    private var _recordeDiasConsecutivos: Int
+    private var _guardaDataInicioCicloDia: Date?
+    private var _guardaDataFinalCicloDia: Date?
+
+    // Semanas consecutivas
+    private var _semanasConsecutivasAtual: Int
+    private var _recordeSemConsecutivos: Int
+    private var _guardaDataInicioCicloSem: Date?
+    private var _guardaDataFinalCicloSem: Date?
+    private var _cicloSemanaAnterior: Bool
+
+    init(
+        dom: Bool = false, seg: Bool = false, ter: Bool = false, qua: Bool = false,
+        qui: Bool = false, sex: Bool = false, sab: Bool = false,
+        diasConsecutivosAtual: Int = 0,
+        recordeDiasConsecutivos: Int = 0,
+        dataInicioDia: Date? = nil,
+        dataFimDia: Date? = nil,
+        semanasConsecutivasAtual: Int = 0,
+        recordeSemanasConsecutivas: Int = 0,
+        dataInicioSem: Date? = nil,
+        dataFimSem: Date? = nil,
+        cicloSemanaAnterior: Bool = false
+    ) {
+        self.dom = dom
+        self.seg = seg
+        self.ter = ter
+        self.qua = qua
+        self.qui = qui
+        self.sex = sex
+        self.sab = sab
+
+        self._diasConsecutivosAtual = diasConsecutivosAtual
+        self._recordeDiasConsecutivos = recordeDiasConsecutivos
+        self._guardaDataInicioCicloDia = dataInicioDia
+        self._guardaDataFinalCicloDia = dataFimDia
+
+        self._semanasConsecutivasAtual = semanasConsecutivasAtual
+        self._recordeSemConsecutivos = recordeSemanasConsecutivas
+        self._guardaDataInicioCicloSem = dataInicioSem
+        self._guardaDataFinalCicloSem = dataFimSem
+        self._cicloSemanaAnterior = cicloSemanaAnterior
     }
-    
-    var descricao: String {
-        get { return _descricao }
-        set { _descricao = newValue }
+
+    // Getters e Setters para Dias
+    var diasConsecutivosAtual: Int {
+        get { _diasConsecutivosAtual }
+        set { _diasConsecutivosAtual = newValue }
     }
-    
-    var pontuacao: String {
-        get { return _pontuacao }
-        set { _pontuacao = newValue }
+
+    var recordeDiasConsecutivos: Int {
+        get { _recordeDiasConsecutivos }
+        set { _recordeDiasConsecutivos = newValue }
     }
-    
-    var tipo: String {
-        get { return _tipo }
-        set { _tipo = newValue }
+
+    var dataInicioCicloDia: Date? {
+        get { _guardaDataInicioCicloDia }
+        set { _guardaDataInicioCicloDia = newValue }
     }
-    
-    var progresso: Int {
-        get { return _progresso }
-        set { _progresso = max(0, newValue) } // impede progresso negativo
+
+    var dataFinalCicloDia: Date? {
+        get { _guardaDataFinalCicloDia }
+        set { _guardaDataFinalCicloDia = newValue }
     }
-    
-    var meta: Int {
-        get { return _meta }
-        set { _meta = newValue }
+
+    // Getters e Setters para Semanas
+    var semanasConsecutivasAtual: Int {
+        get { _semanasConsecutivasAtual }
+        set { _semanasConsecutivasAtual = newValue }
     }
-    
-    // Método para adicionar progresso
-    func adicionarProgresso(_ valor: Int) {
-        _progresso += valor
+
+    var recordeSemanasConsecutivas: Int {
+        get { _recordeSemConsecutivos }
+        set { _recordeSemConsecutivos = newValue }
     }
-    
-    // Método para checar se a missão está concluída
-    func estaConcluida() -> Bool {
-        return _progresso >= _meta
+
+    var dataInicioCicloSem: Date? {
+        get { _guardaDataInicioCicloSem }
+        set { _guardaDataInicioCicloSem = newValue }
+    }
+
+    var dataFinalCicloSem: Date? {
+        get { _guardaDataFinalCicloSem }
+        set { _guardaDataFinalCicloSem = newValue }
+    }
+
+    var cicloSemanaAnterior: Bool {
+        get { _cicloSemanaAnterior }
+        set { _cicloSemanaAnterior = newValue }
     }
 }

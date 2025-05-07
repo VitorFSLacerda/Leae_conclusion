@@ -1,5 +1,43 @@
 import Foundation
 
+let missoes: [Missao] = [
+    Missao(dom: true, seg: true, ter: true, qua: true, qui: true, sex: true, sab: true,
+           diasConsecutivosAtual: 5, recordeDiasConsecutivos: 10,
+           dataInicioDia: Date(), dataFimDia: nil,
+           semanasConsecutivasAtual: 2, recordeSemanasConsecutivas: 4,
+           dataInicioSem: Date(), dataFimSem: nil,
+           cicloSemanaAnterior: true),
+
+    Missao(dom: false, seg: true, ter: false, qua: true, qui: false, sex: true, sab: false,
+           diasConsecutivosAtual: 2, recordeDiasConsecutivos: 5,
+           dataInicioDia: Date(), dataFimDia: nil,
+           semanasConsecutivasAtual: 1, recordeSemanasConsecutivas: 3,
+           dataInicioSem: Date(), dataFimSem: nil,
+           cicloSemanaAnterior: false),
+
+    Missao(dom: false, seg: false, ter: false, qua: true, qui: true, sex: true, sab: true,
+           diasConsecutivosAtual: 3, recordeDiasConsecutivos: 6,
+           dataInicioDia: Date(), dataFimDia: nil,
+           semanasConsecutivasAtual: 2, recordeSemanasConsecutivas: 2,
+           dataInicioSem: Date(), dataFimSem: nil,
+           cicloSemanaAnterior: true),
+
+    Missao(dom: true, seg: false, ter: true, qua: false, qui: true, sex: false, sab: true,
+           diasConsecutivosAtual: 1, recordeDiasConsecutivos: 4,
+           dataInicioDia: Date(), dataFimDia: nil,
+           semanasConsecutivasAtual: 0, recordeSemanasConsecutivas: 1,
+           dataInicioSem: Date(), dataFimSem: nil,
+           cicloSemanaAnterior: false),
+
+    Missao(dom: false, seg: false, ter: true, qua: true, qui: false, sex: false, sab: false,
+           diasConsecutivosAtual: 2, recordeDiasConsecutivos: 2,
+           dataInicioDia: Date(), dataFimDia: nil,
+           semanasConsecutivasAtual: 1, recordeSemanasConsecutivas: 1,
+           dataInicioSem: Date(), dataFimSem: nil,
+           cicloSemanaAnterior: true)
+]
+
+
 var comentarios: [Comentario] = [
     Comentario(
         livro: livros[0], // The Great Gatsby
@@ -47,7 +85,7 @@ var usuarios: [Usuario] = [
         senha: "senhaSecreta123",
         livroAtual: livros[0], // livro "The Great Gatsby"
         gruposUsuario: [grupos[0], grupos[4]], // Joãozinho pertence ao "Clube Gatsby" e "Fãs da Princesinha"
-        missoes: nil,
+        missoes: [missoes[0]],
         comentarios: [comentarios[0], comentarios[4]] // Joãozinho comentou no livro "The Great Gatsby" e "The Secret Garden"
       ),
       Usuario(
@@ -58,7 +96,7 @@ var usuarios: [Usuario] = [
         senha: "senhaSegura456",
         livroAtual: livros[1], // livro "To Kill a Mockingbird"
         gruposUsuario: [grupos[1]], // Maria123 pertence ao "Leitores da Mockingbird"
-        missoes: nil,
+        missoes: [missoes[1]],
         comentarios: [comentarios[1]] // Maria123 comentou no livro "To Kill a Mockingbird"
       ),
       Usuario(
@@ -69,7 +107,7 @@ var usuarios: [Usuario] = [
         senha: "senhaTop789",
         livroAtual: livros[2], // livro "1984"
         gruposUsuario: [grupos[2]], // PedroP pertence ao "Orwellianos"
-        missoes: nil,
+        missoes: [missoes[2]],
         comentarios: [comentarios[2]] // PedroP comentou no livro "1984"
       ),
       Usuario(
@@ -80,7 +118,7 @@ var usuarios: [Usuario] = [
         senha: "senhaForte321",
         livroAtual: livros[3], // livro "The Hobbit"
         gruposUsuario: [grupos[3]], // LucasM pertence ao "Tolkien e Aventuras"
-        missoes: nil,
+        missoes: [missoes[2]],
         comentarios: [comentarios[3]] // LucasM comentou no livro "The Hobbit"
       ),
       Usuario(
@@ -91,7 +129,7 @@ var usuarios: [Usuario] = [
         senha: "senhaSuperSegura987",
         livroAtual: livros[4], // livro "The Secret Garden"
         gruposUsuario: [grupos[4]], // AnaP pertence ao "Fãs da Princesinha"
-        missoes: nil,
+        missoes: [missoes[3]],
         comentarios: [comentarios[4]] // AnaP comentou no livro "The Secret Garden"
       )
 ]
