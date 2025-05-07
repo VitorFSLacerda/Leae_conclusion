@@ -55,7 +55,7 @@ struct BookCarousel: View {
 struct BookCarousel_Previews: PreviewProvider {
     static var previews: some View {
 		let sampleHeader: String = "Sample Section"
-		let books = MockBookGenerator.mockBookArray(count: Int.random(in: 1...10))
+		let books = livros
         BookCarousel(books: books, header: sampleHeader)
     }
 }

@@ -30,7 +30,7 @@ struct NickAndProgress: View {
 
 struct NickAndProgress_Previews: PreviewProvider {
     static var previews: some View {
-		let comment = MockCommentGenerator.mockComment()
+		let comment = comentarios[0]
         NickAndProgress(comment: comment)
     }
 }

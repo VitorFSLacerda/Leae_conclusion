@@ -34,7 +34,7 @@ struct HeaderOnGroup: View {
 
 struct HeaderOnGroup_Previews: PreviewProvider {
     static var previews: some View {
-		let group = MockGroupGenerator.mockGroup()
+		let group = grupos[0]
         HeaderOnGroup(group: group)
     }
 }

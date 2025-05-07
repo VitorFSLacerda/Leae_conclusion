@@ -77,6 +77,10 @@ class Grupo: Codable {
         get { return _missoes }
         set { _missoes = newValue }
     }
+	
+	var comentarios: [Comentario] {
+		get { return _comentarios }
+	}
 
     // Mensagem de progresso do líder
     var mensagemLider: String {

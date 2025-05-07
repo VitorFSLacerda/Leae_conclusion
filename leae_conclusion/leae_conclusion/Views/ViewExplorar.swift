@@ -12,7 +12,7 @@ struct ViewExplorar: View {
 		ScrollView(.vertical, showsIndicators: false) {
 			VStack(alignment: .leading, spacing: Spacing.betweenSections) {
 				let sampleHeader: String = "Sample Section"
-				let sampleBooks = MockBookGenerator.mockBookArray(count: 5)
+				let sampleBooks = livros
 				
 				BookCarousel(books: sampleBooks, header: sampleHeader)
 				BookCarousel(books: sampleBooks, header: sampleHeader)

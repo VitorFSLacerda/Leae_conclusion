@@ -100,33 +100,33 @@ struct LibraryView: View {
     }
 }
 
-// Cartão de livro
-struct BookCard: View {
-    let book: LibraryBook
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            book.coverImage
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 100, height: 150)
-                .cornerRadius(8)
-            
-            Text(book.title)
-                .font(.headline)
-                .lineLimit(2)
-                .minimumScaleFactor(0.7)
-            
-            Text(book.author)
-                .font(.subheadline)
-                .foregroundColor(.gray)
-        }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(12)
-        .shadow(radius: 4)
-    }
-}
+//// Cartão de livro
+//struct BookCard: View {
+//    let book: LibraryBook
+//    
+//    var body: some View {
+//        VStack(alignment: .leading, spacing: 8) {
+//            book.coverImage
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .frame(width: 100, height: 150)
+//                .cornerRadius(8)
+//            
+//            Text(book.title)
+//                .font(.headline)
+//                .lineLimit(2)
+//                .minimumScaleFactor(0.7)
+//            
+//            Text(book.author)
+//                .font(.subheadline)
+//                .foregroundColor(.gray)
+//        }
+//        .padding()
+//        .background(Color.white)
+//        .cornerRadius(12)
+//        .shadow(radius: 4)
+//    }
+//}
 
 // Modelo de dados para os livros
 struct LibraryBook: Identifiable {
