@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665D2F432DCB843A004DFBC7 /* BookCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F422DCB843A004DFBC7 /* BookCarousel.swift */; };
+		665D2F462DCB8442004DFBC7 /* CommentOnFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F442DCB8442004DFBC7 /* CommentOnFeed.swift */; };
+		665D2F472DCB8442004DFBC7 /* NickAndProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F452DCB8442004DFBC7 /* NickAndProgress.swift */; };
+		665D2F4D2DCB844B004DFBC7 /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F482DCB844A004DFBC7 /* GroupCard.swift */; };
+		665D2F4E2DCB844B004DFBC7 /* DiscussionSectionOnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F492DCB844A004DFBC7 /* DiscussionSectionOnGroup.swift */; };
+		665D2F4F2DCB844B004DFBC7 /* CommentOnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F4A2DCB844B004DFBC7 /* CommentOnGroup.swift */; };
+		665D2F502DCB844B004DFBC7 /* HeaderOnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F4B2DCB844B004DFBC7 /* HeaderOnGroup.swift */; };
+		665D2F512DCB844B004DFBC7 /* LeaderCardOnGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F4C2DCB844B004DFBC7 /* LeaderCardOnGroup.swift */; };
+		665D2F562DCB8457004DFBC7 /* MockGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F522DCB8457004DFBC7 /* MockGroup.swift */; };
+		665D2F572DCB8457004DFBC7 /* MockBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F532DCB8457004DFBC7 /* MockBook.swift */; };
+		665D2F582DCB8457004DFBC7 /* MockComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F542DCB8457004DFBC7 /* MockComment.swift */; };
+		665D2F592DCB8457004DFBC7 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F552DCB8457004DFBC7 /* MockUser.swift */; };
 		66F953FE2DC903240075A39F /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F953FD2DC903240075A39F /* MainAppView.swift */; };
 		66F954002DC903460075A39F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F953FF2DC903460075A39F /* LoginView.swift */; };
 		66F954022DC903720075A39F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954012DC903720075A39F /* RegisterView.swift */; };
@@ -31,6 +43,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		665D2F422DCB843A004DFBC7 /* BookCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCarousel.swift; sourceTree = "<group>"; };
+		665D2F442DCB8442004DFBC7 /* CommentOnFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentOnFeed.swift; sourceTree = "<group>"; };
+		665D2F452DCB8442004DFBC7 /* NickAndProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickAndProgress.swift; sourceTree = "<group>"; };
+		665D2F482DCB844A004DFBC7 /* GroupCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
+		665D2F492DCB844A004DFBC7 /* DiscussionSectionOnGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussionSectionOnGroup.swift; sourceTree = "<group>"; };
+		665D2F4A2DCB844B004DFBC7 /* CommentOnGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentOnGroup.swift; sourceTree = "<group>"; };
+		665D2F4B2DCB844B004DFBC7 /* HeaderOnGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderOnGroup.swift; sourceTree = "<group>"; };
+		665D2F4C2DCB844B004DFBC7 /* LeaderCardOnGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderCardOnGroup.swift; sourceTree = "<group>"; };
+		665D2F522DCB8457004DFBC7 /* MockGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGroup.swift; sourceTree = "<group>"; };
+		665D2F532DCB8457004DFBC7 /* MockBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBook.swift; sourceTree = "<group>"; };
+		665D2F542DCB8457004DFBC7 /* MockComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComment.swift; sourceTree = "<group>"; };
+		665D2F552DCB8457004DFBC7 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
 		66F953FD2DC903240075A39F /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		66F953FF2DC903460075A39F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		66F954012DC903720075A39F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -66,6 +90,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		665D2F3D2DCB8406004DFBC7 /* newbook */ = {
+			isa = PBXGroup;
+			children = (
+				665D2F422DCB843A004DFBC7 /* BookCarousel.swift */,
+			);
+			path = newbook;
+			sourceTree = "<group>";
+		};
+		665D2F3E2DCB8410004DFBC7 /* newgroup */ = {
+			isa = PBXGroup;
+			children = (
+				665D2F4A2DCB844B004DFBC7 /* CommentOnGroup.swift */,
+				665D2F492DCB844A004DFBC7 /* DiscussionSectionOnGroup.swift */,
+				665D2F482DCB844A004DFBC7 /* GroupCard.swift */,
+				665D2F4B2DCB844B004DFBC7 /* HeaderOnGroup.swift */,
+				665D2F4C2DCB844B004DFBC7 /* LeaderCardOnGroup.swift */,
+			);
+			path = newgroup;
+			sourceTree = "<group>";
+		};
+		665D2F3F2DCB8418004DFBC7 /* Newmock */ = {
+			isa = PBXGroup;
+			children = (
+				665D2F532DCB8457004DFBC7 /* MockBook.swift */,
+				665D2F542DCB8457004DFBC7 /* MockComment.swift */,
+				665D2F522DCB8457004DFBC7 /* MockGroup.swift */,
+				665D2F552DCB8457004DFBC7 /* MockUser.swift */,
+			);
+			path = Newmock;
+			sourceTree = "<group>";
+		};
+		665D2F412DCB842F004DFBC7 /* New comm */ = {
+			isa = PBXGroup;
+			children = (
+				665D2F442DCB8442004DFBC7 /* CommentOnFeed.swift */,
+				665D2F452DCB8442004DFBC7 /* NickAndProgress.swift */,
+			);
+			path = "New comm";
+			sourceTree = "<group>";
+		};
 		66F953FA2DC902CF0075A39F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				66F954092DC903FA0075A39F /* ComponentsStruct.swift */,
+				665D2F412DCB842F004DFBC7 /* New comm */,
+				665D2F3F2DCB8418004DFBC7 /* Newmock */,
+				665D2F3E2DCB8410004DFBC7 /* newgroup */,
+				665D2F3D2DCB8406004DFBC7 /* newbook */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -237,22 +305,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F9540D2DC9041C0075A39F /* KeychainHelper.swift in Sources */,
+				665D2F592DCB8457004DFBC7 /* MockUser.swift in Sources */,
 				66F954062DC903A40075A39F /* LibraryView.swift in Sources */,
 				66F9541C2DC905960075A39F /* Livro.swift in Sources */,
+				665D2F582DCB8457004DFBC7 /* MockComment.swift in Sources */,
 				66F954182DC9050C0075A39F /* Comentario.swift in Sources */,
+				665D2F4E2DCB844B004DFBC7 /* DiscussionSectionOnGroup.swift in Sources */,
+				665D2F572DCB8457004DFBC7 /* MockBook.swift in Sources */,
+				665D2F502DCB844B004DFBC7 /* HeaderOnGroup.swift in Sources */,
 				66F9541A2DC905260075A39F /* Missao.swift in Sources */,
+				665D2F4F2DCB844B004DFBC7 /* CommentOnGroup.swift in Sources */,
 				E5BE88292DC8F8DA0028C6DE /* ContentView.swift in Sources */,
+				665D2F432DCB843A004DFBC7 /* BookCarousel.swift in Sources */,
 				66F954022DC903720075A39F /* RegisterView.swift in Sources */,
 				66F953FE2DC903240075A39F /* MainAppView.swift in Sources */,
 				66F9540F2DC9044F0075A39F /* ExploreView.swift in Sources */,
+				665D2F512DCB844B004DFBC7 /* LeaderCardOnGroup.swift in Sources */,
 				E598D88E2DCA4270004DC719 /* ViewPerfil.swift in Sources */,
 				66F9540A2DC903FA0075A39F /* ComponentsStruct.swift in Sources */,
 				66F954042DC9038E0075A39F /* ResetPasswordView.swift in Sources */,
+				665D2F562DCB8457004DFBC7 /* MockGroup.swift in Sources */,
 				E598D8862DCA3A4D004DC719 /* BancoDadosGeral.swift in Sources */,
+				665D2F462DCB8442004DFBC7 /* CommentOnFeed.swift in Sources */,
 				66F954142DC904CE0075A39F /* Usuario.swift in Sources */,
 				66F954002DC903460075A39F /* LoginView.swift in Sources */,
 				E5BE88272DC8F8DA0028C6DE /* leae_conclusionApp.swift in Sources */,
 				66F954122DC904BB0075A39F /* DataBaseManager.swift in Sources */,
+				665D2F4D2DCB844B004DFBC7 /* GroupCard.swift in Sources */,
+				665D2F472DCB8442004DFBC7 /* NickAndProgress.swift in Sources */,
 				66F954162DC904FA0075A39F /* Grupo.swift in Sources */,
 				E598D88A2DCA4132004DC719 /* Constants.swift in Sources */,
 			);
