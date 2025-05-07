@@ -1,7 +1,7 @@
 import Foundation
 
 class Usuario: Codable, Identifiable, Equatable {
-	private var _id = UUID()
+    private var _id = UUID()
     private var _foto: String?
     private var _apelido: String
     private var _nome: String
@@ -12,6 +12,7 @@ class Usuario: Codable, Identifiable, Equatable {
     private var _livroAtual: Livro? = nil
     private var _gruposUsuario: [Grupo] = []
     private var _missoes: [Missao] = []
+
 
     // Enum para definir as chaves de codificação/decodificação
     private enum CodingKeys: String, CodingKey {
@@ -29,34 +30,34 @@ class Usuario: Codable, Identifiable, Equatable {
     }
 
     // Inicializador principal
-    init(apelido: String) {
-        self._apelido = apelido
-    }
+    // Inicializador completo
 
-    // Construtor
-    init(apelido: String, nome: String, email: String, senha: String) {
-        self._foto = nil
+
+
+    init(foto: String?, apelido: String, nome: String, email: String, senha: String, livroAtual: Livro?, gruposUsuario: [Grupo], missoes: [Missao], comentarios: [Comentario]) {
+        self._foto = foto
         self._apelido = apelido
         self._nome = nome
         self._email = email
         self._senha = senha
-        self._comentarios = []
-        self._leituras = [:]
-        self._livroAtual = nil
-        self._gruposUsuario = []
+        self._comentarios = comentarios
+        self._livroAtual = livroAtual
+        self._gruposUsuario = gruposUsuario
+        self._missoes = missoes
     }
 
+    
     // Decodificação
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        _id = try container.decodeIfPresent(UUID.self, forKey: .id)
+        _id = try container.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
         _foto = try container.decodeIfPresent(String.self, forKey: .foto)
         _apelido = try container.decode(String.self, forKey: .apelido)
-        _nome = try container.decodeIfPresent(String.self, forKey: .nome)
-        _email = try container.decodeIfPresent(String.self, forKey: .email)
-        _senha = try container.decodeIfPresent(String.self, forKey: .senha)
+        _nome = try container.decodeIfPresent(String.self, forKey: .nome) ?? ""
+        _email = try container.decodeIfPresent(String.self, forKey: .email) ?? ""
+        _senha = try container.decodeIfPresent(String.self, forKey: .senha) ?? ""
         _comentarios = try container.decodeIfPresent([Comentario].self, forKey: .comentarios) ?? []
-        _leituras = try container.decodeIfPresent([Livro:Int].self, forKey: .comentarios)
+        _leituras = try container.decodeIfPresent([Livro:Int].self, forKey: .leituras) ?? [:]
         _livroAtual = try container.decodeIfPresent(Livro.self, forKey: .livroAtual)
         _gruposUsuario = try container.decodeIfPresent([Grupo].self, forKey: .gruposUsuario) ?? []
         _missoes = try container.decodeIfPresent([Missao].self, forKey: .missoes) ?? []
@@ -97,17 +98,17 @@ class Usuario: Codable, Identifiable, Equatable {
         set { _apelido = newValue }
     }
 
-    var nome: String? {
+    var nome: String {
         get { return _nome }
         set { _nome = newValue }
     }
 
-    var email: String? {
+    var email: String {
         get { return _email }
         set { _email = newValue }
     }
 
-    var senha: String? {
+    var senha: String {
         get { return _senha }
         set { _senha = newValue }
     }
@@ -160,14 +161,6 @@ class Usuario: Codable, Identifiable, Equatable {
     var livroMaisLido: (Livro, Int)? {
         return _leituras.max { a, b in
             return a.value < b.value
-        }
-    }
-
-    // Método para adicionar um comentário
-    func adicionarComentario(_ comentario: Comentario) {
-        _comentarios.append(comentario)
-        _comentarios.sort { c1, c2 in
-            return c1.data > c2.data
         }
     }
 

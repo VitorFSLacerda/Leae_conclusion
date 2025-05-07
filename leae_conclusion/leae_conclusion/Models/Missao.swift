@@ -1,6 +1,6 @@
 import Foundation
 
-class Missao {
+class Missao: Codable {
     
     var dom: Bool
     var seg: Bool

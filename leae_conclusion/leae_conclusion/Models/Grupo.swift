@@ -10,18 +10,27 @@ class Grupo: Codable {
     private var _imagem: String
     private var _lider: Usuario?
     private var _missoes: [Missao]
-
-    // Construtor
-    init(nome: String, descricao: String, livro: Livro, usuarios: [Usuario] = [], imagem: String) {
+    
+    init(
+        nome: String,
+        descricao: String,
+        livro: Livro,
+        usuarios: [Usuario] = [],
+        imagem: String,
+        lider: Usuario,
+        missoes: [Missao] = []
+    ) {
         self._nome = nome
         self._descricao = descricao
         self._livro = livro
         self._usuarios = usuarios
-		self._comentarios = []
+        self._comentarios = []
         self._imagem = imagem
+        self._lider = lider
+        self._missoes = missoes
         self._lider = nil
     }
-
+    
     // MARK: - Propriedades públicas
     var nome: String {
         get { return _nome }
