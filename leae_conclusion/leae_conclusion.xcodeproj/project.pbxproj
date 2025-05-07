@@ -19,14 +19,13 @@
 		665D2F572DCB8457004DFBC7 /* MockBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F532DCB8457004DFBC7 /* MockBook.swift */; };
 		665D2F582DCB8457004DFBC7 /* MockComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F542DCB8457004DFBC7 /* MockComment.swift */; };
 		665D2F592DCB8457004DFBC7 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F552DCB8457004DFBC7 /* MockUser.swift */; };
+		665D2F5B2DCB8CE1004DFBC7 /* ViewExplorar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D2F5A2DCB8CE1004DFBC7 /* ViewExplorar.swift */; };
 		66F953FE2DC903240075A39F /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F953FD2DC903240075A39F /* MainAppView.swift */; };
 		66F954002DC903460075A39F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F953FF2DC903460075A39F /* LoginView.swift */; };
 		66F954022DC903720075A39F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954012DC903720075A39F /* RegisterView.swift */; };
 		66F954042DC9038E0075A39F /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954032DC9038E0075A39F /* ResetPasswordView.swift */; };
-		66F954062DC903A40075A39F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954052DC903A40075A39F /* LibraryView.swift */; };
 		66F9540A2DC903FA0075A39F /* ComponentsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954092DC903FA0075A39F /* ComponentsStruct.swift */; };
 		66F9540D2DC9041C0075A39F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9540C2DC9041C0075A39F /* KeychainHelper.swift */; };
-		66F9540F2DC9044F0075A39F /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9540E2DC9044F0075A39F /* ExploreView.swift */; };
 		66F954122DC904BB0075A39F /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954112DC904BB0075A39F /* DataBaseManager.swift */; };
 		66F954142DC904CE0075A39F /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954132DC904CE0075A39F /* Usuario.swift */; };
 		66F954162DC904FA0075A39F /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F954152DC904FA0075A39F /* Grupo.swift */; };
@@ -55,6 +54,7 @@
 		665D2F532DCB8457004DFBC7 /* MockBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBook.swift; sourceTree = "<group>"; };
 		665D2F542DCB8457004DFBC7 /* MockComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComment.swift; sourceTree = "<group>"; };
 		665D2F552DCB8457004DFBC7 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
+		665D2F5A2DCB8CE1004DFBC7 /* ViewExplorar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExplorar.swift; sourceTree = "<group>"; };
 		66F953FD2DC903240075A39F /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		66F953FF2DC903460075A39F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		66F954012DC903720075A39F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E598D88D2DCA4270004DC719 /* ViewPerfil.swift */,
+				665D2F5A2DCB8CE1004DFBC7 /* ViewExplorar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,7 +307,6 @@
 			files = (
 				66F9540D2DC9041C0075A39F /* KeychainHelper.swift in Sources */,
 				665D2F592DCB8457004DFBC7 /* MockUser.swift in Sources */,
-				66F954062DC903A40075A39F /* LibraryView.swift in Sources */,
 				66F9541C2DC905960075A39F /* Livro.swift in Sources */,
 				665D2F582DCB8457004DFBC7 /* MockComment.swift in Sources */,
 				66F954182DC9050C0075A39F /* Comentario.swift in Sources */,
@@ -319,12 +319,12 @@
 				665D2F432DCB843A004DFBC7 /* BookCarousel.swift in Sources */,
 				66F954022DC903720075A39F /* RegisterView.swift in Sources */,
 				66F953FE2DC903240075A39F /* MainAppView.swift in Sources */,
-				66F9540F2DC9044F0075A39F /* ExploreView.swift in Sources */,
 				665D2F512DCB844B004DFBC7 /* LeaderCardOnGroup.swift in Sources */,
 				E598D88E2DCA4270004DC719 /* ViewPerfil.swift in Sources */,
 				66F9540A2DC903FA0075A39F /* ComponentsStruct.swift in Sources */,
 				66F954042DC9038E0075A39F /* ResetPasswordView.swift in Sources */,
 				665D2F562DCB8457004DFBC7 /* MockGroup.swift in Sources */,
+				665D2F5B2DCB8CE1004DFBC7 /* ViewExplorar.swift in Sources */,
 				E598D8862DCA3A4D004DC719 /* BancoDadosGeral.swift in Sources */,
 				665D2F462DCB8442004DFBC7 /* CommentOnFeed.swift in Sources */,
 				66F954142DC904CE0075A39F /* Usuario.swift in Sources */,
