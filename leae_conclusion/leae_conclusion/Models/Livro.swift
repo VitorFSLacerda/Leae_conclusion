@@ -13,8 +13,19 @@ class Livro: Codable, Identifiable, Hashable {
     private var _rating: Int?
     private var _porcentagemLido: Int
 
-    init(titulo: String, autor: String, genero: String, sinopse: String, imagemCapa: String, qtdPaginas: Int, status: String, rating: Int?, porcentagemLido: Int) {
-
+	init() {
+		_titulo = ""
+		_autor = ""
+		_genero = ""
+		_sinopse = ""
+		_imagemCapa = nil
+		_qtdPaginas = 0
+		_status = ""
+		_rating = nil
+		_porcentagemLido = 0
+	}
+	
+    init(titulo: String, autor: String, genero: String, sinopse: String, imagemCapa: String?, qtdPaginas: Int, status: String, rating: Int?, porcentagemLido: Int) {
         self._titulo = titulo
         self._autor = autor
         self._genero = genero

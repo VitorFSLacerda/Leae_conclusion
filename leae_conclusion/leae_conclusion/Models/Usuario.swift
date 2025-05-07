@@ -29,11 +29,21 @@ class Usuario: Codable, Identifiable, Equatable {
         case missoes = "_missoes"
     }
 
-    // Inicializador principal
+    // Inicializador vazio
+	init() {
+		_foto = nil
+		_apelido = ""
+		_nome = ""
+		_email = ""
+		_senha = ""
+		_comentarios = []
+		_leituras = [:]
+		_livroAtual = nil
+		_gruposUsuario = []
+		_missoes = []
+	}
+	
     // Inicializador completo
-
-
-
     init(foto: String?, apelido: String, nome: String, email: String, senha: String, livroAtual: Livro?, gruposUsuario: [Grupo], missoes: [Missao], comentarios: [Comentario]) {
         self._foto = foto
         self._apelido = apelido

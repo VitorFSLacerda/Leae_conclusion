@@ -11,6 +11,17 @@ class Grupo: Codable {
     private var _lider: Usuario?
     private var _missoes: [Missao]
     
+	init() {
+		_nome = ""
+		_descricao = ""
+		_livro = Livro()
+		_usuarios = []
+		_comentarios = []
+		_imagem = ""
+		_lider = nil
+		_missoes = []
+	}
+	
     init(
         nome: String,
         descricao: String,
