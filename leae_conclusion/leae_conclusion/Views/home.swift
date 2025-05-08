@@ -62,7 +62,6 @@ struct TabBar: View {
     @State var selectedTab = 0
     let isViewActive = false
     var body: some View{
-        
         TabView{
             HomeView()
                 .tabItem{
@@ -72,7 +71,7 @@ struct TabBar: View {
                 }
                 .tag(0)
             
-            Color.red
+            ExploreView()
                 .tabItem{
                     Image(systemName: "globe")
                         .font(.system(size:25))
@@ -80,6 +79,7 @@ struct TabBar: View {
                 }
                 .tag(1)
             
+//            LibraryView()
             Color.clear
                 .tabItem{
                     Image(systemName: "book")
@@ -96,6 +96,7 @@ struct TabBar: View {
                 }
                 .tag(3)
         }
+        .accentColor(Color("Highlight"))
         .foregroundColor(.black)
     }
 }
